@@ -1,0 +1,9 @@
+version: "3"
+services:
+    app:
+        container_name: countryComparision
+        restart: always
+        build: .
+        image: 9993shruti/country_comparision:shruti
+        ports: 
+            - "3001:3001"

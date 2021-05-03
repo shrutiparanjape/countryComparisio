@@ -23,7 +23,7 @@ describe('countries endpoint tests', () => {
     const endpointUrl = config.routes.controllerRootUrl + '/v1/countries';
 
     it('should return a list of countries', function handleGettingCountries(done) {
-      sandbox.stub(controllerCountry, 'getCountries').returns(mockCountries);
+      // sandbox.stub(controllerCountry, 'getCountries').returns(mockCountries);
 
       request(app)
       .get(`${endpointUrl}`)
@@ -40,7 +40,7 @@ describe('countries endpoint tests', () => {
     });
 
     it('should return empty array if no countries found', function handleNoCountriesFound(done) {
-      sandbox.stub(controllerCountry, 'getCountries').returns([]);
+      // sandbox.stub(controllerCountry, 'getCountries').returns([]);
 
       request(app)
       .get(`${endpointUrl}`)
@@ -55,8 +55,8 @@ describe('countries endpoint tests', () => {
     });
 
     it('should return 500 if error getting countries', function handleErrorGettingCountries(done) {
-      const error = new Error('fake error');
-      sandbox.stub(controllerCountry, 'getCountries').throws(error);
+      // const error = new Error('fake error');
+      // sandbox.stub(controllerCountry, 'getCountries').throws(error);
 
       request(app)
       .get(`${endpointUrl}`)

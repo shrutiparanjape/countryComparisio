@@ -16,6 +16,11 @@ Our current stack is primarily built in Node.js, Golang, and .NET.  Since this s
 4. Set your NODE_ENV to `dev`
 5. Run `npm start` to start the server
 
+### Dockerized Set up
+  Run Command - git clone https://github.com/shrutiparanjape/countryComparisio.git
+  docker-compose build
+  docker-compose up
+
 ### Requirements
 
 Joe created one endpoint that retrieves a list of country names, using mock data.
