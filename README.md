@@ -25,7 +25,7 @@ Our current stack is primarily built in Node.js, Golang, and .NET.  Since this s
 Get the list of countries - GET /countries
 Get the population for country - POST /population
 Body : countries - Array of countries. Eg: ["Brazil","India"]
-       order - ASC/DESC 
+       sort - ASC/DESC 
 ### Requirements
 
 Joe created one endpoint that retrieves a list of country names, using mock data.
